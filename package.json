@@ -6,7 +6,7 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
-    "linux-start": "NODE_ENV=production node ./dist/server.generated.js",
+    "start-linux": "NODE_ENV=production node ./dist/server.generated.js",
     "start": "SET NODE_ENV=production & node ./dist/server.generated.js"
   },
   "keywords": [],
