@@ -4,7 +4,8 @@
 </template>
 
 <script>
-import Second from './Second.vue'
+import { Second } from './Second'
+
 export default {
   name: 'App',
   components: {Second}
