@@ -1,10 +1,10 @@
 const path = require('path')
-const webpack = require('webpack')
 const CURRENT_WORKING_DIR = process.cwd()
 const nodeExternals = require('webpack-node-externals')
 
 const config = {
   name: "server",
+  devtool: "source-map",
   entry: [path.join(CURRENT_WORKING_DIR, './server/server.js')],
   target: "node",
   output: {
