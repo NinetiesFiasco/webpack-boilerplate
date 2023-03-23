@@ -21,18 +21,12 @@ app.get('/', (req, res) => {
   res.status(200).sendFile(path.join(CURRENT_WORKING_DIR, 'template.html'))
 })
 
-app.get('/test', (req, res) => {
-  res.status(200).send('hi here')
-})
-
-
 app.listen(port, function onStart(err) {
   if (err) {
     console.log(err)
   }
   console.info('Server started on port %s.', port)
 })
-
 
 MongoClient.connect(url, (err, db) => {
   console.log("Connected successfully to mongodb server")

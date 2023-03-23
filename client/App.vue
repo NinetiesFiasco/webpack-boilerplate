@@ -1,14 +1,11 @@
 <template>
-  Hello world
-  <second />
+  Hi here
 </template>
 
 <script>
-import { Second } from './Second'
 
 export default {
-  name: 'App',
-  components: {Second}
+  name: 'App'
 }
 </script>
 
